@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { Box, Link, Flex, Heading } from "@chakra-ui/react";
+import { Box, Link, Flex, Text } from "@chakra-ui/react";
 
 import ColorModeSwitcher from "./ColorModeSwitcher";
 import MenuItem from "./MenuItem";
@@ -11,9 +11,9 @@ function Navbar() {
 
   return (
     <Box zIndex={1} position="sticky" top={0}>
-      <Flex align="center" justify="space-between" py="1%" px="7%" wrap="wrap">
+      <Flex align="center" justify="space-between" py="2%" px="7%" wrap="wrap">
         <Link>
-          <Heading size="lg" fontFamily="Pacifico, cursive">James</Heading>
+          <Text fontSize="xl" fontFamily="Pacifico, cursive">James</Text>
         </Link>
 
         <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>

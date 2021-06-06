@@ -1,39 +1,32 @@
 import {
   ChakraProvider,
   Box,
+  Button,
   Image,
   Flex,
   Text,
-  Heading,
   VStack,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 
 import theme from "./theme";
 import Navbar from "./components/Navbar";
-import IntroText from "./components/framer/IntroText";
-
-import rochLogo from "./images/rochLogo.png";
+import Layout from "./components/Layout";
+import HeaderCard from "./components/HeaderCard";
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
 
-      <Box>
+      <Layout>
         <Flex justify="center">
           <VStack pt={{ base: "25%", md: "11%" }} textAlign="center">
-            <motion.img
-              src={rochLogo}
-              width="350px"
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.2 }}
-            />
-
-            <IntroText />
+            <HeaderCard />
           </VStack>
+
+          <VStack></VStack>
         </Flex>
-      </Box>
+      </Layout>
     </ChakraProvider>
   );
 }

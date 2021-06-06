@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 export default function IntroText() {
-  const line1 = "Hi! I'm James!";
-  const line2 = "A Frontend Developer and Aspiring FullStack Developer";
+  const line1 = "Hello World, I'm James";
+  const line2 = "Frontend Developer, Designer and Aspiring FullStack Developer";
 
   const sentence = {
     hidden: { opacity: 1 },
@@ -32,7 +32,11 @@ export default function IntroText() {
     >
       {line1.split("").map((char, index) => {
         return (
-          <motion.span style={{scale: 2}} key={char + "-" + index} variants={letter}>
+          <motion.span
+            style={{ fontSize: "1.5rem", fontWeight: "bold" }}
+            key={char + "-" + index}
+            variants={letter}
+          >
             {char}
           </motion.span>
         );
@@ -40,7 +44,11 @@ export default function IntroText() {
       <br />
       {line2.split("").map((char, index) => {
         return (
-          <motion.span key={char + "-" + index} variants={letter}>
+          <motion.span
+            style={{ fontSize: "1rem", fontWeight: "bold" }}
+            key={char + "-" + index}
+            variants={letter}
+          >
             {char}
           </motion.span>
         );
