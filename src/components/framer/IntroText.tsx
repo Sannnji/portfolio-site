@@ -45,7 +45,7 @@ export default function IntroText() {
       {line2.split("").map((char, index) => {
         return (
           <motion.span
-            style={{ fontSize: "1rem", fontWeight: "bold" }}
+            style={{ fontSize: "1rem", fontWeight: "normal" }}
             key={char + "-" + index}
             variants={letter}
           >

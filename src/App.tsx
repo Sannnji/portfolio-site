@@ -20,7 +20,7 @@ function App() {
 
       <Layout>
         <Flex justify="center">
-          <VStack pt={{ base: "25%", md: "11%" }} textAlign="center">
+          <VStack mt={{ base: "12%", md: "8%" }} textAlign="center">
             <HeaderCard />
           </VStack>
 
