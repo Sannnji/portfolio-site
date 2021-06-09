@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Box, Link, Flex, Text } from "@chakra-ui/react";
 
-import ColorModeSwitcher from "./ColorModeSwitcher";
+import ColorModeSwitcher from "../ColorModeSwitcher";
 import MenuItem from "./MenuItem";
 
 function Navbar() {
@@ -10,8 +10,8 @@ function Navbar() {
   const handleToggle = () => setShow(!show);
 
   return (
-    <Box zIndex={1} position="sticky" top={0}>
-      <Flex align="center" justify="space-between" py="2%" px="7%" wrap="wrap">
+    <Box zIndex={1} top={0}>
+      <Flex align="center" justify="space-between" py="2%" px="13%" wrap="wrap">
         <Link>
           <Text fontSize="xl" fontFamily="Pacifico, cursive">James</Text>
         </Link>

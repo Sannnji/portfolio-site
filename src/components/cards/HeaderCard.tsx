@@ -1,11 +1,11 @@
 import { Box, Image, Flex } from "@chakra-ui/react";
 import { motion, animate } from "framer-motion";
 
-import IntroText from "./framer/IntroText";
+import IntroText from "../framer/IntroText";
 
 import "./HeaderCard.css";
-import cityScape from "../images/cityScape.png";
-import rochLogo from "../images/rochLogo.png";
+import cityScape from "../../images/cityScape.png";
+import rochLogo from "../../images/rochLogo.png";
 
 function HeaderCard() {
   return (
