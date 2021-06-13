@@ -35,7 +35,7 @@ function App() {
         <AnimateSharedLayout>
           <HeaderCard />
 
-          <SimpleGrid
+          {/* <SimpleGrid
             columns={{ sm: 4, md: 4 }}
             spacingX="20px"
             spacingY="20px"
@@ -72,7 +72,7 @@ function App() {
           <HStack>
             <SkillsCard />
             <SkillsCard />
-          </HStack>
+          </HStack> */}
         </AnimateSharedLayout>
       </Layout>
 

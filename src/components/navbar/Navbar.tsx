@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <Box zIndex={1} top={0}>
-      <Flex align="center" justify="space-between" py="2%" px="13%" wrap="wrap">
+      <Flex align="center" justify="space-between" py="2%" px={{ base: "5%", md: "13%" }} wrap="wrap">
         <Link>
           <Text fontSize="xl" fontFamily="Pacifico, cursive">James</Text>
         </Link>
