@@ -1,46 +1,103 @@
 import { useState } from "react";
-import { Box, Text, VStack } from "@chakra-ui/react";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { MotionBox } from "../framer/MotionBox";
+import { MotionImg } from "../framer/MotionImg";
+import { MotionFlex } from "../framer/MotionFlex";
+import { MotionText } from "../framer/MotionText";
+import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { Images } from "../../images/index";
 
+import typescript from "../../images/skills/typescript.svg";
 import "./SkillsCard.css";
 
 export default function SkillsCard() {
+  const skills = [
+    {
+      name: "TypeScript",
+      image: Images.typescript,
+    },
+    {
+      name: "React",
+      image: Images.react,
+    },
+    {
+      name: "MongoDB",
+      image: Images.mongodb,
+    },
+    {
+      name: "Apollo",
+      image: Images.apollo,
+    },
+    {
+      name: "GraphQL",
+      image: Images.graphql,
+    },
+  ];
+
   return (
     <AnimateSharedLayout>
-        <motion.div layout className="skillsDiv" initial={{ borderRadius: 25 }}>
-          {items.map((item) => (
-            <Item key={item} />
-          ))}
-        </motion.div>
+      <MotionBox
+        layout
+        display="flex"
+        flexDirection="column"
+        bg="white"
+        padding="20px"
+        width="400px"
+        borderRadius="lg"
+        boxShadow="lg"
+      >
+        {skills.map((element) => (
+          <Item name={element.name} image={element.image} />
+        ))}
+      </MotionBox>
     </AnimateSharedLayout>
   );
 }
 
-function Item() {
+interface ItemProps {
+  name: string;
+  image: any;
+}
+
+const Item: React.FC<ItemProps> = ({ name, image }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
-      <motion.div className="avatar" layout />
+    <MotionBox
+      className="skillItem"
+      bg={"lightgrey"}
+      layout
+      onClick={toggleOpen}
+      borderRadius="md"
+      padding="10px"
+      marginBottom="20px"
+      overflow="hidden"
+      cursor="pointer"
+    >
+      <MotionFlex layout align="center">
+        <MotionImg layout src={image} width="50px"/>
+        <MotionText layout ml={4}>{name}</MotionText>
+      </MotionFlex>
+
       <AnimatePresence>{isOpen && <Content />}</AnimatePresence>
-    </motion.li>
+    </MotionBox>
   );
-}
+};
+
+interface ContentProps {}
 
 function Content() {
   return (
-    <motion.div
+    <MotionBox
       layout
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      padding="10px"
     >
-      <div className="row" />
-      <div className="row" />
-      <div className="row" />
-    </motion.div>
+      <MotionText>Years of experience:</MotionText>
+    </MotionBox>
   );
 }
 

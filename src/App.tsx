@@ -10,7 +10,7 @@ import {
   GridItem,
   HStack,
   SimpleGrid,
-  Stack
+  Stack,
 } from "@chakra-ui/react";
 
 import theme from "./theme";
@@ -20,7 +20,6 @@ import Layout from "./components/Layout";
 import HeaderCard from "./components/cards/HeaderCard";
 import SkillsCard from "./components/cards/SkillsCard";
 import { Footer } from "./components/footer/Footer";
-import { AnimateSharedLayout } from "framer-motion";
 
 import guiginosOne from "./images/guiginos/guiginos-one.png";
 import guiginosTwo from "./images/guiginos/guiginos-two.png";
@@ -32,10 +31,13 @@ function App() {
       <Navbar />
 
       <Layout>
-        <AnimateSharedLayout>
-          <HeaderCard />
+        <HeaderCard />
 
-          {/* <SimpleGrid
+        <Flex flexDirection="column" my={8}>
+          <SkillsCard />
+        </Flex>
+
+        {/* <SimpleGrid
             columns={{ sm: 4, md: 4 }}
             spacingX="20px"
             spacingY="20px"
@@ -73,7 +75,6 @@ function App() {
             <SkillsCard />
             <SkillsCard />
           </HStack> */}
-        </AnimateSharedLayout>
       </Layout>
 
       <Footer />

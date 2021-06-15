@@ -11,9 +11,17 @@ function Navbar() {
 
   return (
     <Box zIndex={1} top={0}>
-      <Flex align="center" justify="space-between" py="2%" px={{ base: "5%", md: "13%" }} wrap="wrap">
+      <Flex
+        align="center"
+        justify="space-between"
+        py="2%"
+        px={{ base: "5%", md: "13%" }}
+        wrap="wrap"
+      >
         <Link>
-          <Text fontSize="xl" fontFamily="Pacifico, cursive">James</Text>
+          <Text fontSize="xl" fontFamily="Pacifico, cursive">
+            James
+          </Text>
         </Link>
 
         <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
@@ -26,21 +34,13 @@ function Navbar() {
           direction={{ base: "column", md: "row" }}
         >
           <Flex direction={{ base: "column", md: "row" }} align="center">
-            <MenuItem>
-              <Link>Home</Link>
-            </MenuItem>
+            <MenuItem>Home</MenuItem>
 
-            <MenuItem>
-              <Link>Skills</Link>
-            </MenuItem>
+            <MenuItem>Skills</MenuItem>
 
-            <MenuItem>
-              <Link>Work</Link>
-            </MenuItem>
+            <MenuItem>Work</MenuItem>
 
-            <MenuItem>
-              <Link>Contact</Link>
-            </MenuItem>
+            <MenuItem>Contact</MenuItem>
             <ColorModeSwitcher />
           </Flex>
         </Box>

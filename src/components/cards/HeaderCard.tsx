@@ -58,9 +58,9 @@ export default function HeaderCard() {
         />
         <MotionText
           initial={{ opacity: 0 }}
-          animate={textController}
           fontWeight="bold"
           fontSize={{ base: "md", md: "lg" }}
+          animate={textController}
         >
           Hello World, I'm James
           <br />
