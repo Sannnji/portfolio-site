@@ -1,8 +1,8 @@
-import { MotionFlex } from "../framer/MotionFlex";
 import { MotionImg } from "../framer/MotionImg";
 import { MotionBox } from "../framer/MotionBox";
+import { MotionSimpleGrid } from "../framer/MotionSimpleGrid";
 import { MotionText } from "../framer/MotionText";
-import { MotionStack } from "../framer/MotionStack";
+
 
 import { Images } from "../../images/index";
 
@@ -21,15 +21,19 @@ export default function ProjectCard() {
       description:
         "A dog dating site I made following Angela Yu's Full Stack Web Development Course",
     },
+    {
+      name: "Mac's Pizza Shack",
+      webView: Images.macs.webView,
+      description:
+        "A dog dating site I made following Angela Yu's Full Stack Web Development Course",
+    },
   ];
 
   return (
-    <MotionBox
+    <MotionSimpleGrid
       layout
-      borderRadius={15}
-      display="flex"
-      flexDirection="column"
-      maxW="800px"
+      minChildWidth="325px"
+      spacing="20px"
     >
       {projects.map((element) => (
         <Item
@@ -38,7 +42,7 @@ export default function ProjectCard() {
           description={element.description}
         />
       ))}
-    </MotionBox>
+    </MotionSimpleGrid>
   );
 }
 
@@ -50,14 +54,10 @@ interface ItemProps {
 
 const Item: React.FC<ItemProps> = ({ name, image, description }) => {
   return (
-    <MotionFlex bg="#AEAEAE" borderRadius="lg" boxShadow="lg" mb={8}>
-      <MotionImg
-        src={image}
-        borderTopLeftRadius="lg"
-        borderBottomLeftRadius="lg"
-        width="400px"
-      />
-      <MotionBox
+    <>
+      {/* <MotionFlex bg="#AEAEAE" borderRadius="lg" boxShadow="lg" mb={8}> */}
+      <MotionImg src={image} borderRadius="lg" boxShadow="lg" />
+      {/* <MotionBox
         padding={2}
         ml={4}
         display="flex"
@@ -70,7 +70,8 @@ const Item: React.FC<ItemProps> = ({ name, image, description }) => {
           {name}
         </MotionText>
         <MotionText>{description}</MotionText>
-      </MotionBox>
-    </MotionFlex>
+      </MotionBox> */}
+      {/* </MotionFlex> */}
+    </>
   );
 };

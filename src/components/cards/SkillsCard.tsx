@@ -6,7 +6,6 @@ import { MotionText } from "../framer/MotionText";
 import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { Images } from "../../images/index";
 
-import typescript from "../../images/skills/typescript.svg";
 import "./SkillsCard.css";
 
 export default function SkillsCard() {
@@ -37,13 +36,13 @@ export default function SkillsCard() {
     <AnimateSharedLayout>
       <MotionBox
         layout
-        mr={{base: 0, xl: 8}}
-        mb={{base: 8, md: 8, lg: 8, xl: 0}}
+        mr={{ base: 0, xl: 8 }}
+        mb={{ base: 8, md: 8, lg: 8, xl: 0 }}
         display="flex"
         flexDirection="column"
         bg="white"
         padding="20px"
-        minWidth="350px"
+        width={{ base: "100%", md: "350px", lg: "350px" }}
         borderRadius="lg"
         boxShadow="lg"
       >
@@ -78,8 +77,10 @@ const Item: React.FC<ItemProps> = ({ name, image }) => {
       cursor="pointer"
     >
       <MotionFlex layout align="center">
-        <MotionImg layout src={image} width="50px"/>
-        <MotionText layout ml={4}>{name}</MotionText>
+        <MotionImg layout src={image} width="50px" />
+        <MotionText layout ml={4}>
+          {name}
+        </MotionText>
       </MotionFlex>
 
       <AnimatePresence>{isOpen && <Content />}</AnimatePresence>

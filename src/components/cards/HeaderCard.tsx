@@ -1,4 +1,4 @@
-import { Box, Image, Flex } from "@chakra-ui/react";
+import { VStack, Flex } from "@chakra-ui/react";
 
 import { useAnimation } from "framer-motion";
 import { MotionText } from "../framer/MotionText";
@@ -56,16 +56,24 @@ export default function HeaderCard() {
           mr={8}
           animate={rochControls}
         />
+        <Flex flexDirection="column">
         <MotionText
           initial={{ opacity: 0 }}
           fontWeight="bold"
-          fontSize={{ base: "md", md: "lg" }}
+          fontSize="xl"
           animate={textController}
         >
           Hello World, I'm James
-          <br />
+        </MotionText>
+        <MotionText
+          initial={{ opacity: 0 }}
+          fontWeight="light"
+          fontSize={{ base: "sm", md: "lg" }}
+          animate={textController}
+        >
           Frontend Developer, Designer and Aspiring FullStack Developer
         </MotionText>
+        </Flex>
       </Flex>
 
       <Flex>

@@ -6,4 +6,7 @@ export const Images = {
   apollo: require("./skills/apollo.svg").default,
   guiginos: { webView: require("./guiginos/webView.png").default },
   tindawg: { webView: require("./tindawg/webView.png").default },
+  macs: {
+    webView: require("./macs/webView.png").default,
+  },
 };

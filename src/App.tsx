@@ -26,8 +26,9 @@ function App() {
           }}
           my={8}
           justify="center"
+          align="center"
         >
-          <SkillsCard />
+          {/* <SkillsCard /> */}
           <ProjectCard />
         </Flex>
       </Layout>
