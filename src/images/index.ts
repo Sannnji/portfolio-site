@@ -4,4 +4,6 @@ export const Images = {
   graphql: require("./skills/graphql.svg").default,
   mongodb: require("./skills/mongodb.svg").default,
   apollo: require("./skills/apollo.svg").default,
+  guiginos: { webView: require("./guiginos/webView.png").default },
+  tindawg: { webView: require("./tindawg/webView.png").default },
 };

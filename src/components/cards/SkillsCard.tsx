@@ -37,11 +37,13 @@ export default function SkillsCard() {
     <AnimateSharedLayout>
       <MotionBox
         layout
+        mr={{base: 0, xl: 8}}
+        mb={{base: 8, md: 8, lg: 8, xl: 0}}
         display="flex"
         flexDirection="column"
         bg="white"
         padding="20px"
-        width="400px"
+        minWidth="350px"
         borderRadius="lg"
         boxShadow="lg"
       >
