@@ -15,7 +15,7 @@ function Navbar() {
         align="center"
         justify="space-between"
         py="2%"
-        px={{ base: "5%", xl: "17%" }}
+        px={{ base: "5%", xl: "13%" }}
         wrap="wrap"
       >
         <Link>
