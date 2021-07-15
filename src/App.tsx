@@ -8,6 +8,7 @@ import HeaderCard from "./components/cards/HeaderCard";
 import SkillsCard from "./components/cards/SkillsCard";
 import { Footer } from "./components/footer/Footer";
 import ProjectCard from "./components/cards/ProjectsCard";
+import { SectionDivider } from "./components/SectionDivider";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Layout>
         <HeaderCard />
 
+        <SectionDivider sectionName="My Projects"/>
         <Flex
           flexDirection={{
             base: "column",
@@ -24,13 +26,16 @@ function App() {
             lg: "column",
             xl: "row",
           }}
-          my={8}
+          my={20}
           justify="center"
           align="center"
         >
           {/* <SkillsCard /> */}
           <ProjectCard />
         </Flex>
+
+        <SectionDivider sectionName="My Skills" />
+
       </Layout>
 
       <Footer />
