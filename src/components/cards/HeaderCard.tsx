@@ -35,6 +35,7 @@ export default function HeaderCard() {
     <MotionBox
       className="test"
       pt={8}
+      my={8}
       borderRadius="lg"
       boxShadow="dark-lg"
       overflow="hidden"
