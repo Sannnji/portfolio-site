@@ -1,4 +1,4 @@
-import { Divider, Box, Heading } from "@chakra-ui/react";
+import { Divider, Box, Heading, useColorModeValue } from "@chakra-ui/react";
 
 interface SectionDividerProps {
   sectionName: String;
@@ -7,10 +7,14 @@ interface SectionDividerProps {
 export const SectionDivider: React.FC<SectionDividerProps> = ({
   sectionName,
 }) => {
+  const SwitchColor = useColorModeValue("#404040", "white");
+  
   return (
-    <Box mt={8}>
-      <Heading mb={2}>{sectionName}</Heading>
-      <Divider />
+    <Box my={12} textAlign="center">
+      <Heading mb={4} color={SwitchColor}>
+        {sectionName}
+      </Heading>
+      <Divider color={SwitchColor}/>
     </Box>
   );
 };

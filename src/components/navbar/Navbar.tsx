@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { Box, Link, Flex, Text } from "@chakra-ui/react";
+import { Box, Link, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 
 import ColorModeSwitcher from "../ColorModeSwitcher";
 import MenuItem from "./MenuItem";
@@ -8,9 +8,10 @@ import MenuItem from "./MenuItem";
 function Navbar() {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
+  const SwitchColor = useColorModeValue("#404040", "white");
 
   return (
-    <Box zIndex={1} top={0}>
+    <Box zIndex={1} top={0} color={SwitchColor}>
       <Flex
         align="center"
         justify="space-between"
