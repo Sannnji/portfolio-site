@@ -7,7 +7,7 @@ import Layout from "./components/Layout";
 import HeaderCard from "./components/cards/HeaderCard";
 import SkillCard from "./components/cards/SkillCard";
 import { Footer } from "./components/footer/Footer";
-import ProjectCard from "./components/cards/ProjectsCard";
+import ProjectCards from "./components/cards/ProjectCards";
 import { SectionDivider } from "./components/SectionDivider";
 
 function App() {
@@ -18,13 +18,13 @@ function App() {
       <Layout>
         <HeaderCard />
 
-        <SectionDivider sectionName="Skills" />
+        <SectionDivider sectionName="Skills" id="skills" />
         <Flex>
           <SkillCard
             favicon="fas fa-paint-brush"
             skillName="Front end"
             text1="I'm a fan of coding things from scratch, and using graphic editors like
-        Photoshop XD, Figma and Framer"
+            Photoshop XD, Figma and Framer"
             iKnow="Languages I speak"
             text2="Javascript, Typescript, CSS, HTML"
             iKnowlil="Familiar with"
@@ -41,7 +41,7 @@ function App() {
           />
         </Flex>
 
-        <SectionDivider sectionName="Projects" />
+        <SectionDivider sectionName="Projects" id="projects" />
         <Flex
           flexDirection={{
             base: "column",
@@ -53,7 +53,7 @@ function App() {
           justify="center"
           align="center"
         >
-          <ProjectCard />
+          <ProjectCards />
         </Flex>
       </Layout>
 

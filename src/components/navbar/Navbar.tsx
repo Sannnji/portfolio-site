@@ -35,13 +35,13 @@ function Navbar() {
           direction={{ base: "column", md: "row" }}
         >
           <Flex direction={{ base: "column", md: "row" }} align="center">
-            <MenuItem>Home</MenuItem>
+            <MenuItem href="#home">Home</MenuItem>
 
-            <MenuItem>Skills</MenuItem>
+            <MenuItem href="#skills">Skills</MenuItem>
 
-            <MenuItem>Work</MenuItem>
+            <MenuItem href="#projects">Projects</MenuItem>
 
-            <MenuItem>Contact</MenuItem>
+            <MenuItem href="#contact">Contact</MenuItem>
             <ColorModeSwitcher />
           </Flex>
         </Box>

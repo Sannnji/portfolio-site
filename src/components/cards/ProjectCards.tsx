@@ -55,23 +55,7 @@ interface ItemProps {
 const Item: React.FC<ItemProps> = ({ name, image, description }) => {
   return (
     <>
-      {/* <MotionFlex bg="#AEAEAE" borderRadius="lg" boxShadow="lg" mb={8}> */}
-      <MotionImg src={image} borderRadius="lg" boxShadow="lg" />
-      {/* <MotionBox
-        padding={2}
-        ml={4}
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignContent="center"
-        maxW="250px"
-      >
-        <MotionText fontSize="lg" fontWeight="bold">
-          {name}
-        </MotionText>
-        <MotionText>{description}</MotionText>
-      </MotionBox> */}
-      {/* </MotionFlex> */}
+      <MotionImg src={image} borderRadius="lg" boxShadow="dark-lg" />
     </>
   );
 };
