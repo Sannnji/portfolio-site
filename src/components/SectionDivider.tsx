@@ -12,7 +12,7 @@ export const SectionDivider: React.FC<SectionDividerProps> = ({
   const SwitchColor = useColorModeValue("#404040", "white");
 
   return (
-    <Box my={12} textAlign="center" id={id}>
+    <Box my={20} textAlign="center" id={id}>
       <Heading mb={4} color={SwitchColor}>
         {sectionName}
       </Heading>

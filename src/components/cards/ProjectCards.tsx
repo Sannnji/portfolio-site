@@ -3,8 +3,8 @@ import { MotionBox } from "../framer/MotionBox";
 import { MotionSimpleGrid } from "../framer/MotionSimpleGrid";
 import { MotionText } from "../framer/MotionText";
 
-
 import { Images } from "../../images/index";
+import { Link } from "@chakra-ui/react";
 
 export default function ProjectCard() {
   const projects = [
@@ -30,11 +30,7 @@ export default function ProjectCard() {
   ];
 
   return (
-    <MotionSimpleGrid
-      layout
-      minChildWidth="325px"
-      spacing="20px"
-    >
+    <MotionSimpleGrid layout minChildWidth="325px" spacing="20px">
       {projects.map((element) => (
         <Item
           name={element.name}
@@ -52,10 +48,12 @@ interface ItemProps {
   description: string;
 }
 
-const Item: React.FC<ItemProps> = ({ name, image, description }) => {
+const Item: React.FC<ItemProps> = ({ image }) => {
   return (
     <>
-      <MotionImg src={image} borderRadius="lg" boxShadow="dark-lg" />
+      <Link>
+        <MotionImg src={image} borderRadius="lg" boxShadow="dark-lg" />
+      </Link>
     </>
   );
 };
