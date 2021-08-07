@@ -6,8 +6,8 @@ export const Introduction = () => {
       <Box width="75%">
         <Heading>Hello world, I'm James!</Heading>
         <Text>
-          I dropped out of college in 2019 to pursue a developer careerr on my
-          own, as I was neverr a fan of the tradition education system. More
+          I dropped out of college in 2019 to pursue a developer career on my
+          own, as I was never a fan of the tradition education system. More
           importantly it didn't seem like a skill I couldn't learn on my own.
           Not only that, but It also seemed like a financially smart idea. So,
           after fighting through a ton of external criticism, imposter syndrome
