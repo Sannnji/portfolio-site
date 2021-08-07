@@ -1,7 +1,5 @@
 import { MotionImg } from "../framer/MotionImg";
-import { MotionBox } from "../framer/MotionBox";
 import { MotionSimpleGrid } from "../framer/MotionSimpleGrid";
-import { MotionText } from "../framer/MotionText";
 
 import { Images } from "../../images/index";
 import { Link } from "@chakra-ui/react";

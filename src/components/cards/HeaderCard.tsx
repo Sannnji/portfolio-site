@@ -1,4 +1,4 @@
-import { VStack, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 import { useAnimation } from "framer-motion";
 import { MotionText } from "../framer/MotionText";
