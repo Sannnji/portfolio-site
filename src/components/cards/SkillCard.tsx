@@ -31,7 +31,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
       textAlign="center"
       mx="15px"
       my="15px"
-      width="50%"
+      width={{base: "auto", md: "50%"}}
       boxShadow="dark-lg"
     >
       <Text as="i" fontSize="48px" color="#4FD1C5" className={favicon} />

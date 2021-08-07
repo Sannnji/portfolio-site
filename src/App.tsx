@@ -24,7 +24,7 @@ function App() {
           <Introduction />
 
           <SectionDivider sectionName="Skills" id="skills" />
-          <Flex>
+          <Flex flexDirection={{ base: "column", md: "row" }} justify="center">
             <SkillCard
               favicon="fas fa-paint-brush"
               skillName="Front end"
