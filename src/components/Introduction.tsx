@@ -4,14 +4,19 @@ export const Introduction = () => {
   return (
     <Flex textAlign="center" mt={16} justifyContent="center">
       <Box width="75%">
-        <Heading>Hello world, I'm James!</Heading>
-        <Text>
-          I dropped out of college in 2019 to pursue a developer career on my
-          own, as I was never a fan of the tradition education system. More
-          importantly it didn't seem like a skill I couldn't learn on my own.
-          Not only that, but It also seemed like a financially smart idea. So,
-          after fighting through a ton of external criticism, imposter syndrome
-          and COVID-19. I hereby bring you James' Portfolio!!
+        <Heading mb={4}>Quick About Me</Heading>
+        <Text fontWeight="semibold">
+          Due to how the accessibility of education and information has changed
+          and grown. I dropped out of college in the winter of 2019 to pursue my
+          developer career independently. Since then, I've completed a udemy
+          course on full stack web development, a full stack web mobile bootcamp
+          offered by NuCamp, and spent time exploring Java, Flutter and Python.
+        </Text>
+        <br />
+        <Text fontWeight="semibold">
+          When I'm not coding, you can find me gaming / streaming, drawing,
+          cooking, finding ways to improve myself, and watching the Harry Potter
+          series for the millionth time
         </Text>
       </Box>
     </Flex>

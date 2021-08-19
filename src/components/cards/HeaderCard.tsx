@@ -72,7 +72,7 @@ export default function HeaderCard() {
           fontSize={{ base: "sm", md: "lg" }}
           animate={textController}
         >
-          Frontend Developer, Designer and Aspiring FullStack Developer
+          Frontend Developer, Designer and FullStack Developer
         </MotionText>
         </Flex>
       </Flex>

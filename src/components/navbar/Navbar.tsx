@@ -15,8 +15,8 @@ function Navbar() {
       <Flex
         align="center"
         justify="space-between"
-        py="2%"
-        px={{ base: "5%", xl: "13%" }}
+        pt={6}
+        px={{ base: "5%", xl: "10%" }}
         wrap="wrap"
       >
         <Link>

@@ -3,6 +3,6 @@ import * as React from 'react'
 
 export const Copyright = (props: TextProps) => (
   <Text fontSize="sm" {...props}>
-    &copy; {new Date().getFullYear()} Envelope, Inc. All rights reserved.
+    &copy; {new Date().getFullYear()} NotReal, Inc. All rights reserved.
   </Text>
 )
