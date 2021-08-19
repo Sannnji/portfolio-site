@@ -49,11 +49,11 @@ export default function HeaderCard() {
       }}
       transition={{ duration: ".5", ease: "easeIn" }}
     >
-      <Flex mb={4} mx={4} textAlign="left" align="center" justify="center">
+      <Flex mb={2} mx={4} textAlign="left" align="center" justify="center">
         <MotionImg
           src={rochLogo}
           initial={{ scale: 0 }}
-          width={{ base: "85px", md: "150px" }}
+          width={{ base: "65px", md: "115px" }}
           mr={8}
           animate={rochControls}
         />

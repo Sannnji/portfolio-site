@@ -1,6 +1,4 @@
-import { ChakraProvider, Flex } from "@chakra-ui/react";
-
-import theme from "./theme";
+import { Flex } from "@chakra-ui/react";
 
 import Navbar from "./components/navbar/Navbar";
 import Layout from "./components/Layout";
@@ -14,7 +12,7 @@ import { Introduction } from "./components/Introduction";
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <>
       <Navbar />
 
       <Layout>
@@ -64,7 +62,7 @@ function App() {
       </Layout>
 
       <Footer />
-    </ChakraProvider>
+    </>
   );
 }
 
