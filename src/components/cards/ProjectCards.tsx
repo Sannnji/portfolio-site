@@ -54,7 +54,7 @@ const Item: React.FC<ItemProps> = ({ image, link }) => {
   return (
     <>
       <Link href={link}>
-        <MotionImg src={image} borderRadius="lg" boxShadow="dark-lg" />
+        <MotionImg src={image} borderRadius="lg" boxShadow="xl" />
       </Link>
     </>
   );

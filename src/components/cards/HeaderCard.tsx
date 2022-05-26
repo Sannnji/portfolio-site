@@ -37,7 +37,7 @@ export default function HeaderCard() {
       pt={8}
       my={8}
       borderRadius="lg"
-      boxShadow="dark-lg"
+      boxShadow="xl"
       overflow="hidden"
       initial={{ scaleX: 0.25 }}
       animate={boxControls}

@@ -33,7 +33,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
       my="15px"
       width={{base: "auto", md: "50%"}}
       maxW={{base: "auto", md: "525px"}}
-      boxShadow="dark-lg"
+      boxShadow="xl"
     >
       <Text as="i" fontSize="48px" color="#4FD1C5" className={favicon} />
       <Heading mt={4} mb={6}>{skillName}</Heading>
